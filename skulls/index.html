@@ -2830,16 +2830,16 @@ window.onload = function() {
 
                         for (let i = 0; i < 500; i++) {
                             const thumb = document.createElement('img');
-                            thumb.src = data.result.files[i].single_img;
+                            thumb.src = data.files[i].single_img;
                             thumb.setAttribute("id", [i]);
                             thumb.setAttribute("class", "hh");
                             const link = document.createElement('a');
-                            link.setAttribute('href', 'https://doodstream.com/e/' + data.result.files[i].file_code);
+                            link.setAttribute('href', 'https://doodstream.com/d/' + data.files[i].file_code);
                             link.setAttribute("class", 'class="video_thumb');
                             link.setAttribute('target', 'search_iframe');
                             const p = document.createElement('div');
-                            p.innerHTML = ('<h3>' + data.result.files[i].title + '</h3>');
-                            frame.src = 'https://doodstream.com/e/' + data.result.files[i].file_code;
+                            p.innerHTML = ('<h3>' + .files[i].title + '</h3>');
+                            frame.src = 'https://doodstream.com/d/' + data.result.files[i].file_code;
 
 
                             var card = document.createElement('div');
